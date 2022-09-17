@@ -7,7 +7,7 @@
 ## FMCW radar
 
 
-## flowchart
+## Flowchart
 
 
 ## ML Model
