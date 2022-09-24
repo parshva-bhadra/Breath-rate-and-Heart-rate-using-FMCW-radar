@@ -61,14 +61,16 @@
         }
     </script>
     <script type="text/javascript">
+
         function GetData() {
-            var apiUrl = 'https://api.thingspeak.com/channels/1825291/fields/1/last.json?api_key=ISQZDILDCWCKGR14';
+            var apiUrl = 'https://api.thingspeak.com/channels/1848480/fields/1/last.json?api_key=OND3HAFAGXZ7R9XK';
             fetch(apiUrl).then(response => {
                 return response.json();
             }).then(data => {
                 // Work with JSON data here
                 console.log(data.field1);
                 var content = data.field1;
+                // decrypt here
                 document.getElementById('txtField1').innerHTML = content;
             }).catch(err => {
                 // Do something for an error here
@@ -113,9 +115,6 @@
                 <table width="100%" height="100%" border="1"
                     style="border-collapse: collapse; border: 1px solid #CDCDCD;">
                     <tr>
-                        <td width="20%" valign="top">
-
-                        </td>
                         <td width="80%" valign="top">
                             <table>
                                 <tr>
